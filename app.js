@@ -31,7 +31,7 @@ app.get('/thumb',(req, res, next) =>{
     });
 
     /********* Using GOT */
-    // got.stream(image).pipe(transformer).pipe(res);
+    got.stream(image).pipe(transformer).pipe(res);
     
     /********* Using HTTPS */
     // https.get(image, (stream) => {
